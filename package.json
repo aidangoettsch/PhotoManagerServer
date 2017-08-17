@@ -1,0 +1,12 @@
+{
+  "name": "PhotoManagerServer",
+  "version": "0.1.0",
+  "main": "bin/app.js",
+  "repository": "https://github.com/yayes2/PhotoManagerServer",
+  "author": "yayes2",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.3"
+  }
+}
