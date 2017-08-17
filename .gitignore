@@ -63,3 +63,5 @@ jspm_packages
 
 ### Project Specific
 cfg/config.json
+photos/
+latest.log

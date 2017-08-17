@@ -6,7 +6,24 @@
   "author": "yayes2",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^8.0.23",
     "husky": "^0.14.3",
-    "lint-staged": "^4.0.3"
+    "lint-staged": "^4.0.3",
+    "prettier": "^1.5.3",
+    "typescript": "^2.4.2",
+    "typescript-services": "^0.1.5"
+  },
+  "dependencies": {
+    "fb-watchman": "^2.0.0",
+    "winston": "^2.3.1"
+  },
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write --no-semi --single-quote --trailing-comma es5 --parser typescript",
+      "git add"
+    ]
   }
 }
