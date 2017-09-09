@@ -6,6 +6,7 @@
   "author": "yayes2",
   "license": "MIT",
   "devDependencies": {
+    "@types/es6-promise": "^0.0.33",
     "@types/node": "^8.0.23",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
@@ -21,7 +22,8 @@
     "winston": "^2.3.1"
   },
   "scripts": {
-    "build": "babel src -d lib",
+    "start": "node build/app.js",
+    "build": "tsc -p .",
     "precommit": "lint-staged"
   },
   "lint-staged": {
